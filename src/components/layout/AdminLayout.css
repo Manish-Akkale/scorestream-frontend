@@ -39,3 +39,8 @@
   flex: 1;
   padding: 0;
 }
+
+.sidebar a.active {
+  background-color: #2563eb;
+  color: #ffffff;
+}

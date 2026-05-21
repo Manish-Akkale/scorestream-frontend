@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./AdminLayout.css";
 
 function AdminLayout({ children }) {
@@ -8,11 +8,11 @@ function AdminLayout({ children }) {
         <h2>ScoreStream</h2>
 
         <nav>
-          <Link to="/admin/dashboard">Dashboard</Link>
-          <Link to="/admin/teams">Teams</Link>
-          <Link to="/admin/players">Players</Link>
-          <Link to="/admin/matches">Matches</Link>
-          <Link to="/admin/scoring">Live Scoring</Link>
+          <NavLink to="/admin/dashboard">Dashboard</NavLink>
+          <NavLink to="/admin/teams">Teams</NavLink>
+          <NavLink to="/admin/players">Players</NavLink>
+          <NavLink to="/admin/matches">Matches</NavLink>
+          <NavLink to="/admin/scoring">Live Scoring</NavLink>
         </nav>
       </aside>
 

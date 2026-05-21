@@ -4,27 +4,52 @@ import TeamPage from "../pages/TeamPage";
 
 function DashboardPage() {
   return (
-    <div>
-      <h1>Admin Dashboard</h1>
-      <p>Welcome to ScoreStream admin panel.</p>
+    <div className="team-page">
+      <div className="page-header">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p>Welcome to ScoreStream admin panel.</p>
+        </div>
+      </div>
     </div>
   );
 }
 
 function PlayerPage() {
   return (
-    <div>
-      <h1>Player Management</h1>
-      <p>Player module will be created next.</p>
+    <div className="team-page">
+      <div className="page-header">
+        <div>
+          <h1>Player Management</h1>
+          <p>Player module will be created next.</p>
+        </div>
+      </div>
     </div>
   );
 }
 
 function MatchPage() {
   return (
-    <div>
-      <h1>Match Management</h1>
-      <p>Match module will be created later.</p>
+    <div className="team-page">
+      <div className="page-header">
+        <div>
+          <h1>Match Management</h1>
+          <p>Match module will be created later.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function LiveScoringPage() {
+  return (
+    <div className="team-page">
+      <div className="page-header">
+        <div>
+          <h1>Live Scoring</h1>
+          <p>Live scoring console will be created later.</p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -34,7 +59,7 @@ function AppRoutes() {
     <BrowserRouter>
       <AdminLayout>
         <Routes>
-          <Route path="/" element={<Navigate to="/admin/teams" />} />
+          <Route path="/" element={<Navigate to="/admin/teams" replace />} />
 
           <Route path="/admin/dashboard" element={<DashboardPage />} />
 
@@ -43,6 +68,8 @@ function AppRoutes() {
           <Route path="/admin/players" element={<PlayerPage />} />
 
           <Route path="/admin/matches" element={<MatchPage />} />
+
+          <Route path="/admin/scoring" element={<LiveScoringPage />} />
         </Routes>
       </AdminLayout>
     </BrowserRouter>
