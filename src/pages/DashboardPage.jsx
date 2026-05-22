@@ -65,9 +65,9 @@ function DashboardPage() {
         <h2>Quick Actions</h2>
 
         <div className="quick-actions">
-          <Link href="/admin/teams">Manage Teams</Link>
-          <Link href="/admin/players">Manage Players</Link>
-          <Link href="/admin/matches">Manage Matches</Link>
+          <Link to="/admin/teams">Manage Teams</Link>
+          <Link to="/admin/players">Manage Players</Link>
+          <Link to="/admin/matches">Manage Matches</Link>
         </div>
       </div>
     </div>
