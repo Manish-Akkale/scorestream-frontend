@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AdminLayout from "../components/layout/AdminLayout";
 import TeamPage from "../pages/TeamPage";
 import DashboardPage from "../pages/DashboardPage";
-git
+
 
 function PlayerPage() {
   return (
