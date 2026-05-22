@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { teamApi } from "../api/teamApi";
 import "./DashboardPage.css";
+import { Link } from "react-router-dom";
 
 function DashboardPage() {
   const [teams, setTeams] = useState([]);
@@ -64,9 +65,9 @@ function DashboardPage() {
         <h2>Quick Actions</h2>
 
         <div className="quick-actions">
-          <a href="/admin/teams">Manage Teams</a>
-          <a href="/admin/players">Manage Players</a>
-          <a href="/admin/matches">Manage Matches</a>
+          <Link href="/admin/teams">Manage Teams</Link>
+          <Link href="/admin/players">Manage Players</Link>
+          <Link href="/admin/matches">Manage Matches</Link>
         </div>
       </div>
     </div>
