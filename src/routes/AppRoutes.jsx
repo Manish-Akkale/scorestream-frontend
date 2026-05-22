@@ -1,19 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AdminLayout from "../components/layout/AdminLayout";
 import TeamPage from "../pages/TeamPage";
-
-function DashboardPage() {
-  return (
-    <div className="team-page">
-      <div className="page-header">
-        <div>
-          <h1>Admin Dashboard</h1>
-          <p>Welcome to ScoreStream admin panel.</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+import DashboardPage from "../pages/DashboardPage";
+git
 
 function PlayerPage() {
   return (
