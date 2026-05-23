@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { playerApi } from "../api/playerApi";
 import { teamApi } from "../api/teamApi";
+import { StatusBadge } from "../components/common/StatusBadge";
+
 import {
   BATTING_STYLES,
   BOWLING_STYLES,
@@ -438,15 +440,7 @@ function PlayerPage() {
                 <td>{player.jerseyNumber}</td>
 
                 <td>
-                  <span
-                    className={
-                      player.active
-                        ? "status-badge active"
-                        : "status-badge inactive"
-                    }
-                  >
-                    {player.active ? "🟢 Active" : "🔴 Inactive"}
-                  </span>
+                  <StatusBadge active={player.active} />
                 </td>
 
                 <td>
