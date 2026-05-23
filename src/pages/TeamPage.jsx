@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { teamApi } from "../api/teamApi";
 import toast from "react-hot-toast";
+import { teamApi } from "../api/teamApi";
 import "./TeamPage.css";
 
 function TeamPage() {
