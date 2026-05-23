@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { teamApi } from "../api/teamApi";
 import toast from "react-hot-toast";
+import { teamApi } from "../api/teamApi";
 import "./TeamPage.css";
+import { StatusBadge } from "../components/common/StatusBadge";
 
 function TeamPage() {
   const [teams, setTeams] = useState([]);
@@ -283,18 +284,7 @@ function TeamPage() {
                 <td>{team.country}</td>
                 <td>{team.countryCode}</td>
                 <td>
-                  <span
-                    style={{
-                      padding: "4px 10px",
-                      borderRadius: "20px",
-                      fontSize: "13px",
-                      fontWeight: "bold",
-                      backgroundColor: team.active ? "#dcfce7" : "#fee2e2",
-                      color: team.active ? "#166534" : "#991b1b",
-                    }}
-                  >
-                    {team.active ? "🟢 Active" : "🔴 Inactive"}
-                  </span>
+                  <StatusBadge active={team.active}/>
                 </td>
 
                 <td>

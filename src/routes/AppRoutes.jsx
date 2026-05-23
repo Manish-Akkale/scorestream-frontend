@@ -2,20 +2,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AdminLayout from "../components/layout/AdminLayout";
 import TeamPage from "../pages/TeamPage";
 import DashboardPage from "../pages/DashboardPage";
+import PlayerPage from "../pages/PlayerPage";
 
 
-function PlayerPage() {
-  return (
-    <div className="team-page">
-      <div className="page-header">
-        <div>
-          <h1>Player Management</h1>
-          <p>Player module will be created next.</p>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function MatchPage() {
   return (
